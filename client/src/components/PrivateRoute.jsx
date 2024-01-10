@@ -6,4 +6,4 @@ export default function PrivateRoute() {
   return currentUser ? <Outlet /> : <Navigate to='/sign-in' />;
 }
 
-//use navigate is a hook and navigaet is a component
+//use navigate is a hook and navigaet is a component .

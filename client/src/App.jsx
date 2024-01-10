@@ -8,7 +8,7 @@ import Header from "./components/Header"
 import PrivateRoute from "./components/PrivateRoute"
 export default function App() {
   return (
-    <div>
+    <div>   
       <BrowserRouter>
       <Header/>
       <Routes >
@@ -20,7 +20,6 @@ export default function App() {
              <Route path="/profile" element={<Profile />}/>
         </Route>
       </Routes>
-      
       </BrowserRouter>
     </div>
   );
