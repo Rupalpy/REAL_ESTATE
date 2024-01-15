@@ -143,6 +143,7 @@ export default function CreateListing() {
           ...formData,
           userRef: currentUser._id,
         }),
+        
       });
       const data = await res.json();
       setLoading(false);
