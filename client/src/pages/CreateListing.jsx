@@ -260,7 +260,9 @@ export default function CreateListing() {
               />
               <div className='flex flex-col items-center'>
                 <p>Regular price</p>
-                <span className='text-xs'>($ / month)</span>
+                {formData.type === 'rent' && (
+                  <span className='text-xs'>($ / month)</span>
+                )}
               </div>
             </div>
             {/* if offer is there then only see it */}
@@ -278,7 +280,9 @@ export default function CreateListing() {
               />
               <div className='flex flex-col items-center'>
                 <p>Discounted price</p>
-                <span className='text-xs'>($ / month)</span>
+                {formData.type === 'rent' && (
+                    <span className='text-xs'>($ / month)</span>
+                  )}
               </div>
             </div>
             )}
@@ -316,7 +320,7 @@ export default function CreateListing() {
                   onClick={() => handleRemoveImage(index)}
                   className='p-3 text-red-700 rounded-lg uppercase hover:opacity-75'
                 >
-                  Delete
+                 Delete
                 </button>
               </div>
             ))}
