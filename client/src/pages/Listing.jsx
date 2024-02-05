@@ -18,6 +18,7 @@ import Contact from '../components/Contact';
 
 // https://sabe.io/blog/javascript-format-numbers-commas#:~:text=The%20best%20way%20to%20format,format%20the%20number%20with%20commas.
 
+
 export default function Listing() {
   SwiperCore.use([Navigation]);
   const [listing, setListing] = useState(null);
@@ -106,7 +107,7 @@ export default function Listing() {
               </p>
               {listing.offer && (
                 <p className='bg-green-900 w-full max-w-[200px] text-white text-center p-1 rounded-md'>
-                  ${+listing.regularPrice - +listing.discountPrice}
+                  ${+listing.regularPrice - +listing.discountPrice} OFF
                 </p>
               )}
             </div>
